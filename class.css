@@ -1,0 +1,21 @@
+/*global*/
+*{
+    background-color: black;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+p{
+    line-height: 2;
+}
+img {
+    max-width: 100%;
+}
+
+/*utilities*/
+p.read-btn{
+    text-transform: uppercase;
+
+}
+/*nav*/
