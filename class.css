@@ -19,3 +19,8 @@ p.read-btn{
 
 }
 /*nav*/
+
+/*section*/
+section img{
+        max-width: 100%;
+    }
