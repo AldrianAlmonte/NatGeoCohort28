@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/afbc28166c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="class.css">
+    <link rel="stylesheet" href="style/class.css">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <title>myNatGeo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>MyNatGeo</title>
 </head>
 <body>
-    <nav>
+    <nav class="navigation-bar">
         <div class="img-container">
             <img src="img/NatGeo-logo-square.webp" alt="">
         </div>
@@ -25,82 +26,101 @@
                 <a href="#">Menu</a>
                 <a href="#"><i class="fa-solid fa-angles-down"></i></a>
         </div>
-        </div>
     </nav>    
     <header>
-        <h1>Latest Stories</h1>
-        <p><span>Subscribe</span>for full access to read stories</p>
-        <div class="border">
-
-        </div>
+        <h1 class="title">Latest Stories</h1>
+        <p><span class="subs-word">Subscribe</span> for full access to read stories</p>
+        <div class="border"></div>
     </header>
-    <main class="container">
-        <div class="main-news">
-            <div class="main-news-img">
-                <img src="img/t.rex.webp" alt="">
+    <div class="flex-container container">
+        <main>
+            <div class="main-news">
+                <div class="main-news-img">
+                    <img src="img/t.rex.webp" alt="">
+                </div>
+
+                <div class="main-news-text">
+                    <h3>Science</h3>
+                    <p class="title">Stan the T.Rex found!</p>
+                    <p class="read-btn"><i class="fa-solid fa-bars"></i> read</p>
+                </div>  
             </div>
-            <div class="main-news-text">
-                <h3>Science</h3>
-                <p>Stan the T.Rex found!</p>
+            <div class="secondary-news-container">
+                <div class="secondary-news">
+                    <div class="secondary-news-img">
+                        <img src="img/pandemic-women.webp" alt="">   
+                    </div><!--secondar-news-img-->
+                    <div class="secondary-news-text">
+                        <h3>Science</h3>
+                        <p class="title">The 1918 pandemic mistake that changed medicine forever<p>
+                        <p class="read-btn"><i class="fa-solid fa-bars"></i> read</p>
+                    </div><!--secondary-news-text-->
+                </div>   
+                
+                <div class="secondary-news">
+                    <div class="secondary-news-img">
+                        <img src="img/fish.jpg" alt="">
+                    </div>
+                    <div class="secondary-news-text">
+                        <h3>Environment <span>Planet possible</span></h3>
+                        <p class="title">Inside the plan to save some of the biggest freshwater</p>
+                        <p class="read-btn"><i class="fa-solid fa-bars"></i> read</p>
+                    </div>
+                </div>
             </div>
-            
-            <p class="read-btn"><i class="fa-solid fa-bars"></i> read</p>
-        </div>
+        </main><!--main ends-->
+        <section class="container">
+            <h2>Today's picks</h2>
 
-        <div class="secondary-news">
-            <div class="secondary-news-img">
-             <img src="img/pandemic-women.webp" alt="">   
-            </div><!--secondar-news-img-->
-
-            <div class="secondary-news-text"><h3>Science</h3>
-            <p>The 1918 pandemic mistake that changed medicine forever</p>
-            </div><!--secondary-news-text-->
-            
-            <p class="read-btn"><i class="fa-solid fa-bars"></i> read</p>
-        </div>
-
-        <div class="secondary-news">
-            <img src="img/fish.jpg" alt="">
-            <h3>Environment <span>Planet possible</span></h3>
-            <p>Inside the planto save some of the biggest freshwater</p>
-            <p class="read-btn"><i class="fa-solid fa-bars"></i> read</p>
-        </div>
-    </main><!--main ends-->
-
-    <section class="container">
-
-        <h2>Today's picks</h2>
-        <div class="pick-item">
-            <img src="img/oregon-coast.JPG" alt="">
-            <div class="picks-text"><h3>Travel <span>Planet possible</span></h3>
+            <div class="pick-item">
+                <img src="img/oregon-coast.JPG" alt="">
+                <div class="picks-text">
+                    <h3>Travel <span>Planet possible</span></h3>
+                    <p>Explore the Oregon Coast-but don't touch the 'dragon toes'</p>
+                </div>
+                
             </div>
-            
-        </div>
 
-        <div class="pick-item-1">
-            <img src="img/questlove.jpg" alt="">
-            <h3>history & culture <span>Race in America</span></h3>
-        </div>
+            <div class="pick-item">
+                <img src="img/questlove.jpg" alt="">
+                <div class="picks-text">
+                    <h3>history & culture</h3> 
+                    <p>Race in America</p>
+                </div>  
+            </div>
 
-        <div class="pick-item">
-            <img src="img/war-in-Ukraine.jpg" alt="">
-            <h3>environment <span>War in Ukraine could plunge world into food shortages</span></h3>
-        </div>
+            <div class="pick-item">
+                <img src="img/war-in-Ukraine.jpg" alt="">
+                <div class="picks-text">
+                    <h3>Environment</h3> 
+                    <p>War in Ukraine could plunge world into food shortages</p>
+                </div>
+            </div>
 
-        <div class="pick-item">
-            <img src="img/snake.jpg" alt="">
-            <h3>animals <span>Can snakes recognize themselves? A controversial study says yes</span></h3>
-        </div>
+            <div class="pick-item">
+                <img src="img/snake.jpg" alt="">
+                <div class="picks-text">
+                    <h3>animals</h3> 
+                    <p>Can snakes recognize themselves? A controversial study says yes</p>
+                </div>
+            </div>
 
-        <div class="pick-item">
-            <img src="img/renaissance-female-superstar.jpg" alt="">
-            <h3>history magazine <span>This artist became the first female Renaissance superstar</span></h3>
-        </div>
+            <div class="pick-item">
+                <img src="img/renaissance-female-superstar.jpg" alt="">
+                <div class="picks-text">
+                    <h3>history magazine</h3> 
+                    <p>This artist became the first female Renaissance superstar</p>
+                </div>
+            </div>
 
-        <div class="pick-item">
-            <img src="img/wildlife.jpg" alt="">
-            <h3>environment <span>Is clear-cutting U.S. forests good for wildlife?</span></h3>
+            <div class="pick-item">
+                <img src="img/wildlife.jpg" alt="">
+                <div class="picks-text">
+                    <h3>environment</h3> 
+                    <p>Is clear-cutting U.S. forests good for wildlife?</p>
+                </div>
+            </div>
+        </section>
         </div>
-    </section>
 </body>
 </html>
